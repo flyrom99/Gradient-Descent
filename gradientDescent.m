@@ -17,7 +17,8 @@ for iter = 1:1500
     %       of the cost function (computeCost) and gradient here.
     %
         %iter
-    numColumns = size(X)(1,2);
+        xSize = size(X);
+    numColumns = xSize(1,2);
     newTheta = zeros(size(theta));
     for feature = 1:numColumns
         sum = 0;
